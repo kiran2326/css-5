@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+    border: 15px solid ;
+     height: 740px; 
+    border-color: white green white orange;
+}
+
+.sky{
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.road{
+    background-image: url(./road.jpg);
+    width: 500%;
+    height: 350px;
+    /* background-position: center; */
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    animation: sample 2s infinite linear alternate ;
+    
+
+}
+
+@keyframes sample {
+    0%{
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(1px);
+        transform: translateX(-2500px);
+    }
+}
+.city{
+    background-image: url(./city.png);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom:39%;
+}
+.sun{
+    background-image: url(./sun.png);
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    position: absolute;
+    left: 95%;
+    top: 10%;
+    z-index: 1;
+    animation: sun 3s  infinite  linear alternate-reverse;
+}
+@keyframes sun {
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+ .car{
+    background-image: url(./car.png);
+    height: 300px;
+    width: 1000px;
+    background-size: cover;
+    position: absolute;
+    bottom: 30%;
+    z-index: 2;
+   animation: car 3s infinite  linear alternate;
+} 
+@keyframes car {
+    100%{
+        transform: translateX(500px);
+    }
+}
+.flag{
+    background-image: url(./Tiranga1.svg);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 48%;
+    left: 50%;
+    z-index: 3;
+    animation: flag 3s infinite linear alternate;
+}
+@keyframes flag {
+    100%{
+        transform: translateX(500px);
+    }
+}
+
+img{
+    height: 200px;
+    animation: img 3s infinite linear alternate;
+}
+.wheel{
+    word-spacing: 400px;
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 6%;
+    animation: wheel  3s infinite linear alternate;
+}
+@keyframes wheel {
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes img {
+    100%{
+        transform: rotate(-360deg);
+        
+    }
+}
+.text{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 10px; 
+   font-size: 30px;   
+}
+#H{
+    background-color: orange;  
+}
+#I{
+    background-color: white;
+}
+#D{
+    background-color: green;
+}

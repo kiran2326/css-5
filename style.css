@@ -1,0 +1,120 @@
+body{
+    background-color: yellow;
+    margin: 0;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top:5%;
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    animation: one 2s infinite linear alternate;
+   
+}
+@keyframes one {
+    25%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewx(-20deg);
+    }
+
+}
+.two{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 5%;
+    margin-left: 100px;
+     
+}
+.b{
+    height: 100px;
+    width: 100px;
+    animation: two 2s infinite linear alternate;
+    background-color: silver;
+}
+@keyframes two {
+    
+     0%{
+        transform: skewy(-10deg);
+    } 
+    25%{
+        transform: skewy(10deg);
+    }
+}
+.c{
+    height: 100px;
+    width: 100px;
+    background-color:  cadetblue;
+    animation: three 3s infinite linear alternate;
+    animation-delay: 1s;
+}
+.three{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 5%;
+    margin-left: 100px;
+}
+@keyframes three {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.four{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 7%;
+    margin-left: 100px;
+}
+.d{
+    height: 50px;
+    width: 100px;
+    background-color: cadetblue;
+    animation: bo 2s infinite linear alternate;
+}
+@keyframes bo {
+    100%{
+        height: 100px;
+    } 
+}
+.e{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    animation: e 2s infinite linear alternate;
+}
+@keyframes e {
+      100%{
+        width:20px;
+      }
+}
+.f{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation: f 2s infinite linear alternate ;
+}
+@keyframes f {
+    100%{
+      transform: rotate(360deg);
+    }
+}
+#L{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 30px;
+}
